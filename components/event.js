@@ -2,7 +2,7 @@ import { BLOCKS } from '@contentful/rich-text-types';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { InView } from 'react-intersection-observer'
 import { FindEntryBySysId } from '../utils/helpers';
-
+import Link from 'next/link';
 export default function Event ({author, setAuthor, event, preformers, composers}) {
 	function formatDate(dateString) {
 		const date = new Date(dateString);
@@ -27,7 +27,7 @@ export default function Event ({author, setAuthor, event, preformers, composers}
 								<h3 className='font-thin text-xl md:text-2xl text-secondary mt-4'> {event?.fields?.eventAddress} </h3>
 								<div className='flex gap-8 my-8'>
 									<div className='hover:font-bold transition-all px-12 py-6 rounded-full bg-secondary cursor-pointer uppercase text-primary'> 
-										Buy Tickets 
+										<Link href={event?.fields?.ticketLink}> Buy Tickets </Link> 
 									</div>
 								</div>
 							</div>

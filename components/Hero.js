@@ -22,7 +22,7 @@ export default function Hero ({content}) {
 										{Array.from({ length: 2 }, (_, i) => {
 											return (
 												<div className={`hover:font-bold transition-all px-12 py-6 border-2 rounded-full ${i % 2 ? 'bg-primary text-secondary' : 'border-primary text-primary'}   cursor-pointer uppercase`}> 
-													<Link href={content?.fields?.[`buttonLink${i}Url`] || ''}> {content?.fields?.[`buttonLink${i+1}`]} </Link> 
+													<Link href={content?.fields?.[`buttonLink${i+1}Url`] || ''}> {content?.fields?.[`buttonLink${i+1}`]} </Link> 
 												</div>
 											)
 										})}

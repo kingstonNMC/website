@@ -10,7 +10,7 @@ export default function About ({content}) {
 			{({ inView, ref }) => {
 				const animation2 = (delay) => `transition-all delay-[${delay}ms] duration-[1500ms] ease-in-out ${inView ? 'opacity-100' : 'opacity-0'}`
 				return (
-					<div ref={ref}>
+					<div id='cta2' ref={ref}>
 						<div className={`${animation2(50)} my-12 md:my-24`}>
 							<div className='container mx-auto'>
 								<div className='text-4xl md:text-6xl text-secondary font-light text-center'> 
