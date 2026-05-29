@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    { "source": "/items", "destination": "/services", "statusCode": 301 },
+    { "source": "/book-online", "destination": "/contact", "statusCode": 301 },
+    { "source": "/request-a-free-quote", "destination": "/quote", "statusCode": 301 },
+    { "source": "/portfolio", "destination": "/gallery", "statusCode": 301 },
+    { "source": "/services-4", "destination": "/services", "statusCode": 301 },
+    { "source": "/items/this-is-a-title-03", "destination": "/gallery", "statusCode": 301 },
+    { "source": "/items/this-is-a-title-02", "destination": "/gallery", "statusCode": 301 },
+    { "source": "/items/this-is-a-title-01", "destination": "/gallery", "statusCode": 301 },
+    { "source": "/portfolio-collections/my-portfolio/project-title-6", "destination": "/gallery", "statusCode": 301 },
+    { "source": "/portfolio-collections/my-portfolio/project-title-2", "destination": "/gallery", "statusCode": 301 },
+    { "source": "/portfolio-collections/my-portfolio/project-title-4", "destination": "/gallery", "statusCode": 301 }
+  ]
+}
