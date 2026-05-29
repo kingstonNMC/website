@@ -3,9 +3,6 @@ import '../styles/output.css'
 import '../styles/scrollbar.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import { GoogleAnalytics } from '@next/third-parties/google'
-import Script from 'next/script'
-import { Open_Sans } from 'next/font/google'
 import AOSProvider from '../components/aos'
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
@@ -40,12 +37,7 @@ function MyApp({ Component, pageProps }) {
       <link href="https://api.fontshare.com/v2/css?f[]=clash-display@300,400,500,600,700&display=swap" rel="stylesheet" />
 
       <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@200;300;400;500;600;700;800&family=DM+Sans:wght@300;400;700;900&display=swap" rel="stylesheet"></link>
-      <link rel="icon" href="https://images.ctfassets.net/p1oy5wf7zkyi/3dKXCFfEBm8ORTbiG46uuE/498ac210b9782c92decd2d26947bb950/Logo_All_Black.avif" />
-      <Script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(pageProps?.schema) }}
-      />
-      <GoogleAnalytics gaId="G-FTCRFWLMX1" />
+      
       
       <Header hero={pageProps?.project?.fields?.hero}  />
       <AOSProvider>
