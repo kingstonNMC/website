@@ -14,7 +14,7 @@ export default function Home({  project, preformers, composers }) {
       <main>
         <CTA content={project} />
         <Event composers={composers} preformers={preformers} event={project?.fields?.event} author={author} setAuthor={setAuthor} />
-        <About />
+        <About content={project} />
         <div className='bg-primary py-12'>
           <h4 className=' font-bold text-center text-3xl'> Feel free to reach out</h4>
           <div className='text-secondary text-center text-xl mt-4'>kingstonnmc@gmail.com</div>

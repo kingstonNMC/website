@@ -15,10 +15,10 @@ export default function Hero ({content}) {
 						<div className='relative z-10 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-12 mt-6 md:mt-0'>
 							<div className='flex flex-col h-full justify-center pl-0 md:pl-12'>
 								<div className={`${animation2(50)} text-center md:text-left p-4 md:p-0`}>
-									<h1 className='text-3xl md:text-5xl lg:text-7xl text-center md:text-left font-thin text-primary mb-2'> 
+									<h1 className='text-4xl md:text-5xl lg:text-7xl text-center md:text-left font-thin text-primary mb-2'> 
 										{content?.fields?.title} 
 									</h1>
-									<div className='flex gap-8 my-12'>
+									<div className='flex flex-col md:flex-row gap-4 md:gap-8 my-12'>
 										{Array.from({ length: 2 }, (_, i) => {
 											return (
 												<div className={`hover:font-bold transition-all px-12 py-6 border-2 rounded-full ${i % 2 ? 'bg-primary text-secondary' : 'border-primary text-primary'}   cursor-pointer uppercase`}> 

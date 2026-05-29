@@ -10,14 +10,15 @@ export default function AuthorBlock ({author, setAuthor}) {
 			className={`
 				fixed
 				top-[5vh]
-				right-[20px]
-				w-1/2
+				right-[5%]
+				w-[90%]
+				md:w-1/2
 				h-[90vh]
 				bg-[#f1f1f1]
 				rounded-2xl
 				p-10
 				z-[1000]
-
+				overflow-y-scroll
 				transform
 				transition-all
 				duration-500
@@ -38,14 +39,14 @@ export default function AuthorBlock ({author, setAuthor}) {
 
 			<div
 				style={{ backgroundImage: 'url(/linda-catlin.jpg)' }}
-				className='w-[300px] h-[300px] mx-auto bg-cover bg-center rounded-full'
+				className='w-[200px] h-[200px] md:w-[300px] md:h-[300px] mx-auto bg-cover bg-center rounded-full'
 			/>
 
 			<h4 className='text-4xl font-thin text-center mt-8'>
 				{author?.fields?.name}
 			</h4>
 
-			<div className='text-center mt-8'>
+			<div className='text-center mt-8 '>
 				{documentToReactComponents(author?.fields?.bio, optionsWithCity('', BLOCKS, 'dark'))}
 			</div>
 		</div>
