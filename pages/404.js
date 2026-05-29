@@ -1,8 +1,7 @@
-import { fetchEntry, fetchEntryByType } from '../utils/contentfulPosts'
+import { fetchEntryByType } from '../utils/contentfulPosts'
 
 
-export default function Home({ home, global, locations, testimonals }) {  
-  console.log(locations)
+export default function Home({ globalRequest }) {  
   return (
     <div>
       
@@ -11,10 +10,10 @@ export default function Home({ home, global, locations, testimonals }) {
 }
 
 export async function getStaticProps() {
-  const globalRequest = await fetchEntryByType('global')
+  const globalRequest = await fetchEntryByType('preformers')
   return {
     props: {
-      global: globalRequest?.items || null,
+      globalRequest
     }
   }
 }

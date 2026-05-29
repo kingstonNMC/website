@@ -14,7 +14,7 @@ export default function CTA ({content}) {
 						<div className={`${animation2(50)} mt-12 md:mt-24`}>
 							<div className='container mx-auto'>
 								<h2 className='text-6xl text-secondary font-light text-center'> {content?.fields?.ctaTitle} </h2>
-								<div className='w-full md:w-2/3 mx-auto'>
+								<div className='w-full mt-8 md:w-2/3 mx-auto'>
 									{documentToReactComponents(content?.fields?.ctaDescription, optionsWithCity('', BLOCKS, 'dark'))}
 								</div>
 							</div>

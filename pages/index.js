@@ -1,7 +1,7 @@
 import { fetchEntryByType, fetchEntry } from '../utils/contentfulPosts'
 import AuthorBlock from '../components/authorBlock'
 import { useState } from 'react'
-import CTA from '../components/CTA'
+import CTA from '../components/cta'
 import Event from '../components/event'
 import About from '../components/about'
 export default function Home({  project, preformers, composers }) {
